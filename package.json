@@ -1,0 +1,69 @@
+{
+  "name": "smile-migraine-admin",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "chart.js": "^2.9.3",
+    "core-js": "^2.6.11",
+    "firebase": "^6.6.2",
+    "linkifyjs": "^2.1.9",
+    "moment": "^2.27.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^7.3.1",
+    "v-infinite-scroll": "^1.0.4",
+    "vue": "^2.6.11",
+    "vue-burger-menu": "^2.0.5",
+    "vue-chartjs": "^3.5.0",
+    "vue-infinite-loading": "^2.4.5",
+    "vue-infinite-scroll": "^2.0.2",
+    "vue-meta": "^2.4.0",
+    "vue-picture-input": "^2.1.6",
+    "vue-router": "^3.3.4",
+    "vue-server-renderer": "^2.6.12",
+    "vue-share-it": "^1.1.1",
+    "vue-social-sharing": "^2.4.7",
+    "vue-socialmedia-share": "^1.0.1",
+    "vue-textarea-autosize": "^1.1.1",
+    "vuejs-paginate": "^2.1.0",
+    "vuex": "^3.4.0",
+    "vuex-persistedstate": "^2.7.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.12.1",
+    "@vue/cli-plugin-eslint": "^3.12.1",
+    "@vue/cli-service": "^3.12.1",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}

@@ -1,0 +1,28 @@
+service cloud.firestore {
+  match /databases/{database}/documents {
+  function authenticated() { return request.auth.uid != null }
+    match /{document=**} {
+      allow read;
+      allow write: if true;
+      allow create;
+      allow update ,delete;
+    }
+    match /users/{userId} {
+       allow get: if authenticated() && request.auth.uid == userId;
+       allow create: if authenticated() && request.auth.uid == userId;
+       allow update, delete: if authenticated() && request.auth.uid == userId;
+    }
+		match /chatRooms/{chatRoomId} {
+      allow read, write;
+    }
+    match /chatRooms/{chatRoomId}/messages/{messageId} {
+      allow read, write;
+    }
+    match /users/{userId}/products/{productId} {
+      allow get: if authenticated() && request.auth.uid == userId;
+			allow list: if authenticated() && request.auth.uid == userId;
+      allow create: if authenticated() && request.auth.uid == userId;
+      allow update, delete: if authenticated() && request.auth.uid == userId;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "comments",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "post_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "comment_at",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "comments",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "post_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "comment_at",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "comments_dev",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "post_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "comment_at",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "comments_dev",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "post_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "comment_at",
+          "order": "DESCENDING"
+        }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}
